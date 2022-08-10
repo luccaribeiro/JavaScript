@@ -1,3 +1,5 @@
-let afirmacoes = ["Y","y","yes","S","sim"]
-sua_opcao = "Y"
-console.log(afirmacoes.includes(sua_opcao))
+let suaOpcao = "Y"
+let afirmacoes = ["Y","y","yes","S","sim", "👍"]
+let resultado = afirmacoes.includes(suaOpcao)
+
+console.log(resultado)

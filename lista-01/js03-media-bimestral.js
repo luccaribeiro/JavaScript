@@ -24,7 +24,7 @@
  */
 
 // Entrada
-var notas = [10, 8, 9.5, 7, 10]
+var notas = [7, 5, 5.5, 6, 5]
 
 // Altere a expressão abaixo para calcular cm com base na var metros
 var media, quantidadeDeNotas
@@ -39,5 +39,11 @@ quantidadeDeNotas = notas.length
 media = total / quantidadeDeNotas   // ?
 
 var resultado = '👉 a média das ' + quantidadeDeNotas + ' notas do bimestre é ' + media.toFixed(1)
+
+if (media > 7) {
+    console.log('APROVADO')
+} else {
+    console.log('REPROVADO')
+}
 
 console.log(resultado)

@@ -1,19 +1,22 @@
-let opcao = 2 /* opção 1 criptografia, opção2 - decriptografia* */
-let texto = "Mvddb!Ovoft!Sjcfjsp"
+let opcao = 'criptografia'  // decriptografia
+let texto = "abacate"   //bcbdbuf
 let cript = []
+let resultado
+
 /** mvddb */
-if (opcao == 1){
-    for(var elemento in texto){
-        n = texto.charCodeAt(elemento) + 1
-        novo = String.fromCharCode(n)
-        cript.push(novo)
-    }
-    console.log(cript.join(""))
-} else{
-    for(var elemento in texto){
-        n = texto.charCodeAt(elemento) - 1
-        novo = String.fromCharCode(n)
-        cript.push(novo)
-    }
-    console.log(cript.join(""))
+
+let key = 1
+
+if (opcao == 'decriptografia'){
+    key = -1
 }
+
+for (var elemento in texto) {
+    n = texto.charCodeAt(elemento) + key
+    novo = String.fromCharCode(n)
+    cript.push(novo)
+}
+
+resultado = cript.join("")
+
+console.log(resultado)
