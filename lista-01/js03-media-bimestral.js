@@ -31,10 +31,12 @@ var media, quantidadeDeNotas
 var total = 0
 
 // Faça um loop para achar o total de notas
-
+for (var elemento of notas){
+    total += elemento
+}
 // Veja como pegar este valor com base na entrada
-quantidadeDeNotas = 5
-media = 0    // ?
+quantidadeDeNotas = notas.length
+media = total / quantidadeDeNotas   // ?
 
 var resultado = '👉 a média das ' + quantidadeDeNotas + ' notas do bimestre é ' + media.toFixed(1)
 
