@@ -4,7 +4,7 @@
  * ENTRADA         SAÍDA
  *    1              100
  *  100            10000
- *   .5              500
+ *   .5               50
  * 
  * Tarefa:
  * - Altere a variável cm para calcular o valor com base na entrada (metros)
@@ -15,10 +15,11 @@
  */
 
 // Entrada
-var metros = 4
+var metros = 0.5
+const CENTIMETROS = 100
 
 // Altere a expressão abaixo para calcular cm com base na var metros
-var cm = 100*metros
+var cm = CENTIMETROS * metros
 
 var resultado = '👉 ' + metros + ' metro(s) == ' + cm + ' centímetro(s)'
 

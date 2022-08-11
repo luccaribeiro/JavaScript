@@ -1,7 +1,10 @@
 let letra = "a"
 let vogais = ["a", "e", "i", "o", "u"]
-if (vogais.includes(letra) == true){
-    console.log("É vogal")
-} else{
-    console.log("Não é vogal")
+
+let resultado = "Não é vogal"
+
+if (vogais.includes(letra)) {
+    resultado = "É vogal"
 }
+
+console.log(resultado)

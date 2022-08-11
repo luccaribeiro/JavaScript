@@ -11,8 +11,7 @@
  */
 
 var anoNascimento = 2004
-const dataAtual = new Date();
-const anoAtual = dataAtual.getFullYear();
+const anoAtual = new Date().getFullYear();
 
 // Tem que pegar o ano atual usando JS e subtrair a var acima
 var idade = anoAtual - anoNascimento
